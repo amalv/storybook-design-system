@@ -21,15 +21,14 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn test
       - run: yarn chromatic test --exit-zero-on-changes
-      - run:
-          name: Install Now CLI
-          command: sudo npm install --global --unsafe-perm now
-      - run:
-          name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
   deploy:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Install Now CLI
+          command: sudo npm install --global --unsafe-perm now
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
