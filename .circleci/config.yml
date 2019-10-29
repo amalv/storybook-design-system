@@ -15,6 +15,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+      - run: yarn chromatic test --exit-zero-on-changes
       - run:
           name: Install Now CLI
           command: sudo npm install --global --unsafe-perm now
