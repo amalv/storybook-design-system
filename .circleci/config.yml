@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8.10.0
+      - image: circleci/node:latest
     working_directory: ~/repo
     steps:
       - checkout
@@ -15,4 +15,14 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: yarn test
+      - run:
+          name: Install Now CLI
+          command: sudo npm install --global --unsafe-perm now
+      - deploy:
+          name: deploy
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                  now --token $ZEIT_TOKEN --prod 
+            else 
+                  now --token $ZEIT_TOKEN
+            fi
