@@ -15,6 +15,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+      - run: test
       - run: yarn chromatic test --exit-zero-on-changes
       - run:
           name: Install Now CLI
