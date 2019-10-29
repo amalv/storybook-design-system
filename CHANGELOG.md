@@ -11,6 +11,19 @@
 
 ---
 
+# v0.1.1 (Wed Oct 30 2019)
+
+#### ⚠️  Pushed to master
+
+- update package.json  (1252707+amalv@users.noreply.github.com)
+- add release script  (1252707+amalv@users.noreply.github.com)
+
+#### Authors: 1
+
+- Amaro Mariño (1252707+amalv@users.noreply.github.com)
+
+---
+
 # v0.1.1 (Tue Oct 29 2019)
 
 #### ⚠️  Pushed to master
