@@ -24,7 +24,7 @@ jobs:
           name: deploy
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-                  now --token $ZEIT_TOKEN --prod 
+                  npm release && now --token $ZEIT_TOKEN --prod 
             else 
                   now --token $ZEIT_TOKEN
             fi
