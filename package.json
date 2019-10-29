@@ -1,7 +1,9 @@
 {
   "name": "learnstorybook-design-system",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": "https://github.com/amalv/storybook-design-system",
   "dependencies": {
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",
@@ -18,7 +20,7 @@
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
     "storybook": "start-storybook -p 9009 -s public",
-    "build": "BABEL_ENV=production babel src -d build",
+    "build-package": "BABEL_ENV=production babel src -d dist",
 
     "chromatic": "chromatic"
   },
