@@ -11,5 +11,11 @@ addDecorator(story => (
   </>
 ));
 
-// automatically import all files ending in *.stories.js
-configure(require.context('../src', true, /\.stories\.js$/), module);
+// automatically import all files ending in *.stories.js|mdx
+configure(
+  [
+    require.context('../src', false, /Intro\.stories\.mdx/),
+    require.context('../src', true, /\.stories\.(js|mdx)$/),
+  ],
+  module
+);
