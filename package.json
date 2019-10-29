@@ -3,7 +3,10 @@
   "version": "0.1.5",
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": "https://github.com/amalv/storybook-design-system",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amalv/storybook-design-system.git"
+  },
   "dependencies": {
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",
@@ -58,5 +61,11 @@
     "auto": "^7.12.4",
     "prettier": "^1.18.2",
     "storybook-chromatic": "^3.0.3"
-  }
+  },
+  "description": "Learn more at [Learn Storybook](https://learnstorybook.com).",
+  "bugs": {
+    "url": "https://github.com/amalv/storybook-design-system/issues"
+  },
+  "homepage": "https://github.com/amalv/storybook-design-system#readme",
+  "author": "Amaro Mariño"
 }
