@@ -1,9 +1,13 @@
 version: 2
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:latest
+
 jobs:
   build:
-    docker:
-      - image: circleci/node:latest
-    working_directory: ~/repo
+    <<: *defaults
     steps:
       - checkout
       - restore_cache:
@@ -20,11 +24,20 @@ jobs:
       - run:
           name: Install Now CLI
           command: sudo npm install --global --unsafe-perm now
-      - deploy:
-          name: deploy
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-                  npm run release && now --token $ZEIT_TOKEN --prod 
-            else 
-                  now --token $ZEIT_TOKEN
-            fi
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+  deploy:
+    <<: *defaults
+    steps:
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+      - run:
+        name: deploy
+        command: |
+          if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                npm run release && now --token $ZEIT_TOKEN --prod 
+          else 
+                now --token $ZEIT_TOKEN
+          fi
