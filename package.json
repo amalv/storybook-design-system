@@ -21,7 +21,6 @@
     "build-storybook-docs": "build-storybook -s public --docs",
     "storybook": "start-storybook -p 9009 -s public",
     "build-package": "BABEL_ENV=production babel src -d dist",
-
     "chromatic": "chromatic"
   },
   "eslintConfig": {
@@ -55,6 +54,7 @@
     "@storybook/addons": "^5.2.5",
     "@storybook/react": "^5.2.5",
     "@storybook/storybook-deployer": "^2.8.1",
+    "auto": "^7.12.4",
     "prettier": "^1.18.2",
     "storybook-chromatic": "^3.0.3"
   }
