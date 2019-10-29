@@ -16,6 +16,7 @@
     "styled-components": "^4.4.0"
   },
   "scripts": {
+    "build": "build-storybook -o build",
     "release": "auto shipit",
     "deploy-storybook": "storybook-to-ghpages",
     "start": "react-scripts start",
