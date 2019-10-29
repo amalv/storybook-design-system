@@ -6,7 +6,7 @@ defaults: &defaults
     - image: circleci/node:latest
 
 jobs:
-  build:
+  test:
     <<: *defaults
     steps:
       - checkout
@@ -19,6 +19,9 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
       - run: yarn test
       - run: yarn chromatic test --exit-zero-on-changes
   deploy:
@@ -40,3 +43,17 @@ jobs:
             else 
                   now --token $ZEIT_TOKEN
             fi
+  workflows:
+  version: 2
+  test-deploy:
+    jobs:
+      - test:
+          filters:
+            tags:
+              only: /^v.*/
+      - deploy:
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
