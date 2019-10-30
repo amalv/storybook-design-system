@@ -1,3 +1,17 @@
+# v0.1.29 (Wed Oct 30 2019)
+
+#### ⚠️  Pushed to master
+
+- apply authenticity github host workaround  (1252707+amalv@users.noreply.github.com)
+- Merge branch 'master' of github.com:amalv/storybook-design-system  (1252707+amalv@users.noreply.github.com)
+- remove workaround for github push permissions  (1252707+amalv@users.noreply.github.com)
+
+#### Authors: 1
+
+- Amaro Mariño (1252707+amalv@users.noreply.github.com)
+
+---
+
 # v0.1.27 (Wed Oct 30 2019)
 
 #### ⚠️  Pushed to master
