@@ -1,3 +1,15 @@
+# v0.1.24 (Wed Oct 30 2019)
+
+#### ⚠️  Pushed to master
+
+- set stricthostkeychecking to no in circle ci config  (1252707+amalv@users.noreply.github.com)
+
+#### Authors: 1
+
+- Amaro Mariño (1252707+amalv@users.noreply.github.com)
+
+---
+
 # v0.1.18 (Wed Oct 30 2019)
 
 #### ⚠️  Pushed to master
