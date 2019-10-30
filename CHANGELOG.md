@@ -18,6 +18,22 @@
 
 #### ⚠️  Pushed to master
 
+- set private to false in package.json  (1252707+amalv@users.noreply.github.com)
+- add fingerprints entry to Circle CI config  (1252707+amalv@users.noreply.github.com)
+- Remove fingerprints entry in Circle CI config  (1252707+amalv@users.noreply.github.com)
+- add ssh keys option to Circle CI config  (1252707+amalv@users.noreply.github.com)
+- fix repository url in package.json  (1252707+amalv@users.noreply.github.com)
+
+#### Authors: 1
+
+- Amaro Mariño (1252707+amalv@users.noreply.github.com)
+
+---
+
+# v0.1.18 (Wed Oct 30 2019)
+
+#### ⚠️  Pushed to master
+
 - add fingerprints entry to Circle CI config  (1252707+amalv@users.noreply.github.com)
 - Remove fingerprints entry in Circle CI config  (1252707+amalv@users.noreply.github.com)
 - add ssh keys option to Circle CI config  (1252707+amalv@users.noreply.github.com)
