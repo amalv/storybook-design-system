@@ -31,7 +31,7 @@ jobs:
           at: ~/repo
       - run:
           name: Install Now CLI
-          command: npm install --global --unsafe-perm now
+          command: yarn global add now
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
