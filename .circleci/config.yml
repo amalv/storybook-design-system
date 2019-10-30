@@ -43,19 +43,19 @@ jobs:
             else 
                   now --token $ZEIT_TOKEN
             fi
-  workflows:
-    version: 2
-    test-deploy:
-      jobs:
-        - test:
-            filters:
-              tags:
-                only: /^v.*/
-        - deploy:
-            requires:
-              - test
-            filters:
-              tags:
-                only: /^v.*/
-              branches:
-                ignore: /.*/
+workflows:
+  version: 2
+  test-deploy:
+    jobs:
+      - test:
+          filters:
+            tags:
+              only: /^v.*/
+      - deploy:
+          requires:
+            - test
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
