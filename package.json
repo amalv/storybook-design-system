@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amalv/storybook-design-system.git"
+    "url": "https://github.com/amalv/storybook-design-system.git"
   },
   "dependencies": {
     "polished": "^3.4.1",
