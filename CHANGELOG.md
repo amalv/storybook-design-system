@@ -1,3 +1,19 @@
+# v0.1.25 (Wed Oct 30 2019)
+
+#### ⚠️  Pushed to master
+
+- add github workaround in Circle CI config  (1252707+amalv@users.noreply.github.com)
+- use npm to install now in Circle CI  (1252707+amalv@users.noreply.github.com)
+- Merge branch 'master' of github.com:amalv/storybook-design-system  (1252707+amalv@users.noreply.github.com)
+- remove workaround from config  (1252707+amalv@users.noreply.github.com)
+- show now version in Circle CI config  (1252707+amalv@users.noreply.github.com)
+
+#### Authors: 1
+
+- Amaro Mariño (1252707+amalv@users.noreply.github.com)
+
+---
+
 # v0.1.24 (Wed Oct 30 2019)
 
 #### ⚠️  Pushed to master
