@@ -29,14 +29,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "babel": {
-    "presets": [
-      "react-app"
-    ],
-    "plugins": [
-      "@babel/plugin-transform-modules-commonjs"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
