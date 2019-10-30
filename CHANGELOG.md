@@ -1,3 +1,15 @@
+# v0.1.40 (Wed Oct 30 2019)
+
+#### ⚠️  Pushed to master
+
+- add build-package script to build script  (1252707+amalv@users.noreply.github.com)
+
+#### Authors: 1
+
+- Amaro Mariño (1252707+amalv@users.noreply.github.com)
+
+---
+
 # v0.1.38 (Wed Oct 30 2019)
 
 
