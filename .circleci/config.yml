@@ -27,6 +27,9 @@ jobs:
   deploy:
     <<: *defaults
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "a0:c2:8b:8c:d4:4a:f3:5b:ea:b4:17:29:34:26:b5:05"
       - attach_workspace:
           at: ~/repo
       - run:
