@@ -1,3 +1,16 @@
+# v0.1.27 (Wed Oct 30 2019)
+
+#### ⚠️  Pushed to master
+
+- Merge branch 'master' of github.com:amalv/storybook-design-system  (1252707+amalv@users.noreply.github.com)
+- remove now version output in Circle CI config  (1252707+amalv@users.noreply.github.com)
+
+#### Authors: 1
+
+- Amaro Mariño (1252707+amalv@users.noreply.github.com)
+
+---
+
 # v0.1.25 (Wed Oct 30 2019)
 
 #### ⚠️  Pushed to master
