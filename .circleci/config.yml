@@ -36,9 +36,6 @@ jobs:
           name: Install Now CLI
           command: sudo npm install --global --unsafe-perm now
       - run:
-          name: Now version 
-          command: now --version 
-      - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
       - run:
