@@ -31,7 +31,7 @@ jobs:
           at: ~/repo
       - run:
           name: Install Now CLI
-          command: yarn global add now
+          command: sudo npm install --global --unsafe-perm now
       - run:
           name: Now version 
           command: now --version 
