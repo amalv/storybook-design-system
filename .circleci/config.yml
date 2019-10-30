@@ -33,9 +33,6 @@ jobs:
           fingerprints:
             - a0:c2:8b:8c:d4:4a:f3:5b:ea:b4:17:29:34:26:b5:05
       - run:
-          name: Avoid hosts unknown for github
-          command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-      - run:
           name: Install Now CLI
           command: sudo npm install --global --unsafe-perm now
       - run:
