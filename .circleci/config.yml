@@ -30,9 +30,6 @@ jobs:
       - attach_workspace:
           at: ~/repo
       - run:
-          name: Avoid hosts unknown for github
-          command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-      - run:
           name: Install Now CLI
           command: yarn global add now
       - run:
