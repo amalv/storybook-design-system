@@ -37,10 +37,13 @@ jobs:
           command: |
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/circleci/.npmrc 
       - run:
           name: debug 
           command: |
             cat ~/repo/.npmrc
+            cat ~/.npmrc
+            cat /home/circleci/.npmrc
       - run:
           name: deploy
           command: |
