@@ -38,6 +38,8 @@ jobs:
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/circleci/.npmrc 
+            npm config set scope "@amalv"
+            npm config list
       - run:
           name: debug 
           command: |
