@@ -1,3 +1,15 @@
+# v0.1.41 (Wed Oct 30 2019)
+
+#### ⚠️  Pushed to master
+
+- run build in deploy step  (1252707+amalv@users.noreply.github.com)
+
+#### Authors: 1
+
+- Amaro Mariño (1252707+amalv@users.noreply.github.com)
+
+---
+
 # v0.1.40 (Wed Oct 30 2019)
 
 #### ⚠️  Pushed to master
