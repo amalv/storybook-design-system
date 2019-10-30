@@ -1,3 +1,15 @@
+# v0.1.42 (Wed Oct 30 2019)
+
+#### ⚠️  Pushed to master
+
+- transform ES2015 modules to CommonJS  (1252707+amalv@users.noreply.github.com)
+
+#### Authors: 1
+
+- Amaro Mariño (1252707+amalv@users.noreply.github.com)
+
+---
+
 # v0.1.41 (Wed Oct 30 2019)
 
 #### ⚠️  Pushed to master
