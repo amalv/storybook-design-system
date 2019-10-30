@@ -1,3 +1,30 @@
+# v0.1.9 (Wed Oct 30 2019)
+
+#### ⚠️  Pushed to master
+
+- set scope in Circle CI config  (1252707+amalv@users.noreply.github.com)
+- more debug info  (1252707+amalv@users.noreply.github.com)
+- add debug info in Circle CI config  (1252707+amalv@users.noreply.github.com)
+- add debug info to Circle CI  (1252707+amalv@users.noreply.github.com)
+- add .npmrc to gitignore  (1252707+amalv@users.noreply.github.com)
+- remove deploy job filters test-deploy workflow  (1252707+amalv@users.noreply.github.com)
+- Fix Circle CI config indentation  (1252707+amalv@users.noreply.github.com)
+- Fix syntax in Circle CI config  (1252707+amalv@users.noreply.github.com)
+- add Circle CI workflow  (1252707+amalv@users.noreply.github.com)
+- Fix Circle Ci deploy config  (1252707+amalv@users.noreply.github.com)
+- fix identation in Circle CI config  (1252707+amalv@users.noreply.github.com)
+- add npm token authentication in CircleCI config  (1252707+amalv@users.noreply.github.com)
+- add trailing line in README  (1252707+amalv@users.noreply.github.com)
+- fix CircleCi release script in deploy step  (1252707+amalv@users.noreply.github.com)
+- add build script  (1252707+amalv@users.noreply.github.com)
+- add npm release to Circle CI config  (1252707+amalv@users.noreply.github.com)
+
+#### Authors: 1
+
+- Amaro Mariño (1252707+amalv@users.noreply.github.com)
+
+---
+
 # v0.1.1 (Wed Oct 30 2019)
 
 #### ⚠️  Pushed to master
