@@ -34,18 +34,7 @@ jobs:
           command: sudo npm install --global --unsafe-perm now
       - run:
           name: Authenticate with registry
-          command: |
-            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
-            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/circleci/.npmrc 
-            npm config set scope "@amalv"
-            npm config list
-      - run:
-          name: debug 
-          command: |
-            cat ~/repo/.npmrc
-            cat ~/.npmrc
-            cat /home/circleci/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
       - run:
           name: deploy
           command: |
