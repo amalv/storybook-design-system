@@ -29,6 +29,9 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
+      - add_ssh_keys:
+          fingerprints:
+            - "d9:18:da:9d:eb:71:5d:25:7a:bd:ec:9d:3b:cf:8a:d2"
       - run:
           name: Install Now CLI
           command: yarn global add now
