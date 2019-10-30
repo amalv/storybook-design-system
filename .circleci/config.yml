@@ -36,6 +36,9 @@ jobs:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
       - run:
+          name: debug 
+          command: cat "~/repo/.npmrc"
+      - run:
           name: deploy
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
