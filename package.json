@@ -4,10 +4,7 @@
   "private": false,
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/amalv/storybook-design-system.git"
-  },
+  "repository": "https://github.com/amalv/storybook-design-system.git",
   "dependencies": {
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",
