@@ -1,3 +1,23 @@
+# v0.2.0 (Thu Oct 31 2019)
+
+#### 🚀  Enhancement
+
+- Create avatar list component [#2](https://github.com/amalv/storybook-design-system/pull/2) ([@amalv](https://github.com/amalv))
+
+#### ⚠️  Pushed to master
+
+- add workaround for github warning prompt in deploy job  (1252707+amalv@users.noreply.github.com)
+- Merge branch 'master' of github.com:amalv/storybook-design-system  (1252707+amalv@users.noreply.github.com)
+- remove workaround from Circle CI config  (1252707+amalv@users.noreply.github.com)
+- add ssh keys fingerprints  (1252707+amalv@users.noreply.github.com)
+
+#### Authors: 2
+
+- [@amalv](https://github.com/amalv)
+- Amaro Mariño (1252707+amalv@users.noreply.github.com)
+
+---
+
 # v0.1.43 (Wed Oct 30 2019)
 
 #### ⚠️  Pushed to master
