@@ -1,6 +1,6 @@
 {
   "name": "@amalv/storybook-design-system",
-  "version": "0.1.43",
+  "version": "0.3.0",
   "private": false,
   "license": "MIT",
   "main": "dist/index.js",
